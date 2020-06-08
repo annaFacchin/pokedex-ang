@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-md-2" *ngFor="let p of pokedex">
+        
+        <!-- card -->
+        <div id='pkmnCardId' class='card mb-4 shadow-sm pkmn-card light-grass' style='text-align: center;'><br>
+            <div id='picId' class='pkmn-pic'>
+                <img clas='card-img-top' src="{{p.picFront}}"></div>
+            <div class='card-body'>
+                <button id='positionId' class='positionCircle grass' disabled>
+                    {{ p.id }}
+                </button><br><br>
+                <div>
+                    <h5><b> {{ p.name }} </b></h5>
+                </div>
+                <br>
+                <div style='text-align:center'>
+                    <button id='detailsBtnId' class='btn custom-button grass' (click)="getDetails(p.name, p.id, p.picFront, p.picBack, p.picShiny, p.types, p.weight, p.height)"
+                        data-target='#modal'>DETAILS</button><br>
+                </div>
+            </div>
+        </div>
+
+        <!-- modal -->
+        <app-modal-component 
+       
+        >
+        </app-modal-component>
+        
+    </div>
+</div>

@@ -1,0 +1,25 @@
+<div class='modal fade' id='modal' tabindex='-1' role='dialog' aria-labelledby='modalTitle' aria-hidden='true'>
+    <div class='modal-dialog modal-dialog-centered' role='document'>
+        <div id='modalId' class='modal-content custom-modal'>
+            <div style='text-align: center;'><br>
+                <div class='modal-title' id='exampleModalLongTitle'><b>DETAILS</b></div>
+                <div id='pokemon-details'>
+
+                    <div>
+                        <img src="{{ pkmnPicFront }}">
+                        <div><img src="{{ pkmnPicBack }}"><img src="{{ pkmnPicShiny }}"></div>
+                        <b>Pokedex no</b>: {{ pkmnId }} <br>
+                        <b>Type/s </b>: {{ pkmnTypes }} <br>
+                        <b>Height </b>: {{ pkmnHeight }} <br>
+                        <b>Weight </b>: {{ pkmnWeight }} <br>
+                        <br>
+                    </div>
+
+                </div>
+                <div><button id='modalBtnId' type='button' class='btn custom-button' data-dismiss='modal'
+                        aria-label='Close'>CLOSE</button>
+                </div><br>
+            </div>
+        </div>
+    </div>
+</div>

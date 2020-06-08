@@ -1,0 +1,5 @@
+<app-navbar-component></app-navbar-component>
+<br>
+<app-navigator-component [selectedPage]="selectedPage" (pageEmitter)="selectPage($event)"></app-navigator-component>
+<br>
+<app-list-component [pokedex]="pokedex" [loading]="loading"></app-list-component>

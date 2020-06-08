@@ -1,0 +1,13 @@
+<div>
+
+    <!-- pokedex -->
+    <div *ngIf="!loading" class="container">
+        <app-card-component [pokedex]="pokedex"></app-card-component>
+    </div>
+
+    <!-- spinner -->
+    <div *ngIf="loading">
+        <app-spinner></app-spinner>
+    </div>
+
+</div>
